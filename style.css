@@ -22,9 +22,11 @@ header { text-align:center; padding:62px 0 8px; }
 .tagline { letter-spacing:5px; text-transform:uppercase; font-size:clamp(.72rem,2vw,.95rem);
   color:#dcdcdc; margin:6px 0 0; }
 /* sits over the starfield, so it needs its own backing to stay readable */
-.intro { max-width:820px; margin:24px auto 0; text-align:center; line-height:1.7;
+.intro { max-width:900px; margin:24px auto 0; text-align:center; line-height:1.7;
   color:#fff; font-size:1.16rem; padding:16px 26px; border-radius:14px;
   text-shadow:0 2px 6px rgba(0,0,0,.95);
+  /* evens the lines out so a single word cannot hang on its own */
+  text-wrap:balance;
   background:radial-gradient(ellipse at center, rgba(0,0,0,.78) 0%, rgba(0,0,0,.6) 55%, transparent 85%); }
 h2.section { text-align:center; font-size:1.5rem; color:var(--gold); letter-spacing:3px;
   text-transform:uppercase; margin:58px 0 26px; font-weight:normal; }
