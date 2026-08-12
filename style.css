@@ -13,9 +13,9 @@ header { text-align:center; padding:34px 0 8px; }
   font-size:clamp(2.1rem, 6vw, 3.6rem); font-weight:bold; letter-spacing:2px; margin:0;
   filter:drop-shadow(2px 3px 3px rgba(0,0,0,.9));
 }
-/* NFL in red, SUBGRIDS in the site gold */
-.brand .nfl { color:#e01b24; text-shadow:0 0 14px rgba(224,27,36,.45); }
-.brand .gold, .brand.gold-only {
+/* NFL in red, SUBGRIDS in the site gold - used by the title and the footer */
+.nfl { color:#e01b24; text-shadow:0 0 14px rgba(224,27,36,.45); }
+.gold, .brand.gold-only {
   background:linear-gradient(to bottom,#FFDB85,#AA742F); -webkit-background-clip:text;
   background-clip:text; -webkit-text-fill-color:transparent; color:transparent;
 }
@@ -51,6 +51,6 @@ h2.section { text-align:center; font-size:1.5rem; color:var(--gold); letter-spac
   background:linear-gradient(to bottom,#FFDB85,#AA742F); -webkit-background-clip:text;
   background-clip:text; -webkit-text-fill-color:transparent; color:transparent;
   filter:drop-shadow(2px 3px 2px rgba(0,0,0,.85)); }
-footer { flex-shrink:0; text-align:center; padding:40px 18px 22px; color:#cfcfcf;
-  font-size:.86rem; }
-footer .note { color:#8f8f8f; font-size:.78rem; margin-top:8px; }
+footer { flex-shrink:0; text-align:center; padding:40px 18px 26px; }
+footer .sitename { font-size:1.5rem; font-weight:bold; letter-spacing:1.5px;
+  filter:drop-shadow(2px 3px 3px rgba(0,0,0,.9)); }
