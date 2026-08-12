@@ -53,6 +53,8 @@ h2.section { text-align:center; font-size:1.5rem; color:var(--gold); letter-spac
   background:linear-gradient(to bottom,#FFDB85,#AA742F); -webkit-background-clip:text;
   background-clip:text; -webkit-text-fill-color:transparent; color:transparent;
   filter:drop-shadow(2px 3px 2px rgba(0,0,0,.85)); }
-/* solid black plate, centred under the title */
+/* solid black plate, centred under the title - clickable through to subgrids.com */
 .sitename { display:inline-block; margin:14px auto 0; padding:9px 26px; background:#000;
-  border-radius:8px; font-size:1.75rem; font-weight:bold; letter-spacing:1.5px; }
+  border-radius:8px; font-size:1.75rem; font-weight:bold; letter-spacing:1.5px;
+  text-decoration:none; }
+.sitename:hover { box-shadow:0 0 14px rgba(221,182,103,.55); }
