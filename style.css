@@ -11,9 +11,13 @@ a { color: var(--gold-lit); }
 header { text-align:center; padding:34px 0 8px; }
 .brand {
   font-size:clamp(2.1rem, 6vw, 3.6rem); font-weight:bold; letter-spacing:2px; margin:0;
+  filter:drop-shadow(2px 3px 3px rgba(0,0,0,.9));
+}
+/* NFL in red, SUBGRIDS in the site gold */
+.brand .nfl { color:#e01b24; text-shadow:0 0 14px rgba(224,27,36,.45); }
+.brand .gold, .brand.gold-only {
   background:linear-gradient(to bottom,#FFDB85,#AA742F); -webkit-background-clip:text;
   background-clip:text; -webkit-text-fill-color:transparent; color:transparent;
-  filter:drop-shadow(2px 3px 3px rgba(0,0,0,.9));
 }
 .tagline { letter-spacing:5px; text-transform:uppercase; font-size:clamp(.72rem,2vw,.95rem);
   color:#dcdcdc; margin:6px 0 0; }
