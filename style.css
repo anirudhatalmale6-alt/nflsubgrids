@@ -28,8 +28,13 @@ header { text-align:center; padding:62px 0 8px; }
   /* evens the lines out so a single word cannot hang on its own */
   text-wrap:balance;
   background:radial-gradient(ellipse at center, rgba(0,0,0,.78) 0%, rgba(0,0,0,.6) 55%, transparent 85%); }
+/* Dark pool behind the heading so the starfield stops breaking up the letters -
+   fades out at the edges rather than sitting in a hard black box. */
 h2.section { text-align:center; font-size:1.65rem; color:var(--gold); letter-spacing:3px;
-  text-transform:uppercase; margin:58px 0 26px; font-weight:bold; }
+  text-transform:uppercase; margin:58px 0 26px; font-weight:bold;
+  padding:16px 0;
+  text-shadow:0 2px 6px rgba(0,0,0,.95);
+  background:radial-gradient(ellipse at center, rgba(0,0,0,.94) 0%, rgba(0,0,0,.8) 42%, transparent 74%); }
 .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:22px; }
 /* home page: all five armies on one row, folding down on narrow screens */
 .grid.five { grid-template-columns:repeat(5,1fr); gap:16px; }
