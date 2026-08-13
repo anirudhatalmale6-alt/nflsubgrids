@@ -48,11 +48,15 @@ h2.section { text-align:center; font-size:1.5rem; color:var(--gold); letter-spac
 .plate img { width:100%; display:block; background:#000; }
 .plate .cap { padding:10px 12px; text-align:center; font-size:.95rem; color:#e9e9e9;
   letter-spacing:1px; text-transform:uppercase; }
-.back { display:inline-block; margin:26px 0 0; font-size:1.5rem; font-weight:bold;
+/* top left of the page - sits over the header area so the title does not move */
+.back { position:absolute; top:24px; left:26px; z-index:2;
+  display:inline-block; margin:0; font-size:1.5rem; font-weight:bold;
   text-decoration:none; letter-spacing:1.5px;
   background:linear-gradient(to bottom,#FFDB85,#AA742F); -webkit-background-clip:text;
   background-clip:text; -webkit-text-fill-color:transparent; color:transparent;
   filter:drop-shadow(2px 3px 2px rgba(0,0,0,.85)); }
+/* on a phone the centred title needs the full width, so let it sit in the flow */
+@media (max-width:760px) { .back { position:static; margin:20px 0 0; } }
 /* solid black plate, centred under the title - clickable through to subgrids.com */
 .sitename { display:inline-block; margin:14px auto 0; padding:9px 26px; background:#000;
   border-radius:8px; font-size:1.75rem; font-weight:bold; letter-spacing:1.5px;
