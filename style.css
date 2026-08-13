@@ -34,7 +34,8 @@ h2.section { text-align:center; font-size:1.65rem; color:var(--gold); letter-spa
   text-transform:uppercase; margin:58px 0 26px; font-weight:bold;
   padding:16px 0;
   text-shadow:0 2px 6px rgba(0,0,0,.95);
-  background:radial-gradient(ellipse at center, rgba(0,0,0,.94) 0%, rgba(0,0,0,.8) 42%, transparent 74%); }
+  /* sized in em so the pool hugs the words and scales with the type */
+  background:radial-gradient(ellipse 8.5em 2.6em at center, rgba(0,0,0,.94) 0%, rgba(0,0,0,.85) 45%, transparent 100%); }
 .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:22px; }
 /* home page: all five armies on one row, folding down on narrow screens */
 .grid.five { grid-template-columns:repeat(5,1fr); gap:16px; }
