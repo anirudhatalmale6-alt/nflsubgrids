@@ -7,8 +7,8 @@ body {
   display:flex; flex-direction:column;
 }
 a { color: var(--gold-lit); }
-.wrap { width:100%; max-width:1180px; margin:0 auto; padding:0 18px; flex:1 0 auto; }
-header { text-align:center; padding:62px 0 8px; }
+.wrap { width:100%; max-width:1180px; margin:0 auto; padding:0 30px; flex:1 0 auto; }
+header { text-align:center; padding:30px 0 6px; }
 .brand {
   font-size:clamp(2.1rem, 6vw, 3.6rem); font-weight:bold; letter-spacing:2px; margin:0;
   filter:drop-shadow(2px 3px 3px rgba(0,0,0,.9));
@@ -22,7 +22,7 @@ header { text-align:center; padding:62px 0 8px; }
 .tagline { letter-spacing:5px; text-transform:uppercase; font-size:clamp(.72rem,2vw,.95rem);
   color:#dcdcdc; margin:6px 0 0; }
 /* sits over the starfield, so it needs its own backing to stay readable */
-.intro { max-width:900px; margin:24px auto 0; text-align:center; line-height:1.7;
+.intro { max-width:900px; margin:18px auto 0; text-align:center; line-height:1.7;
   color:#fff; font-size:1.16rem; padding:16px 26px; border-radius:14px;
   text-shadow:0 2px 6px rgba(0,0,0,.95);
   /* evens the lines out so a single word cannot hang on its own */
@@ -31,7 +31,7 @@ header { text-align:center; padding:62px 0 8px; }
 /* Dark pool behind the heading so the starfield stops breaking up the letters -
    fades out at the edges rather than sitting in a hard black box. */
 h2.section { text-align:center; font-size:1.65rem; color:var(--gold); letter-spacing:3px;
-  text-transform:uppercase; margin:58px 0 26px; font-weight:bold;
+  text-transform:uppercase; margin:34px 0 22px; font-weight:bold;
   padding:16px 0;
   text-shadow:0 2px 6px rgba(0,0,0,.95);
   /* sized in em so the pool hugs the words and scales with the type */
@@ -68,3 +68,10 @@ h2.section { text-align:center; font-size:1.65rem; color:var(--gold); letter-spa
   border-radius:8px; font-size:1.75rem; font-weight:bold; letter-spacing:1.5px;
   text-decoration:none; }
 .sitename:hover { box-shadow:0 0 14px rgba(221,182,103,.55); }
+
+/* company line at the foot of every page */
+.sitefoot { margin:52px 0 0; padding:22px 0 34px; text-align:center;
+  border-top:1px solid rgba(221,182,103,.22);
+  font-size:1.02rem; font-weight:bold; letter-spacing:2.4px;
+  text-transform:uppercase; color:var(--gold);
+  text-shadow:0 2px 5px rgba(0,0,0,.9); }
