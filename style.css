@@ -28,8 +28,8 @@ header { text-align:center; padding:62px 0 8px; }
   /* evens the lines out so a single word cannot hang on its own */
   text-wrap:balance;
   background:radial-gradient(ellipse at center, rgba(0,0,0,.78) 0%, rgba(0,0,0,.6) 55%, transparent 85%); }
-h2.section { text-align:center; font-size:1.5rem; color:var(--gold); letter-spacing:3px;
-  text-transform:uppercase; margin:58px 0 26px; font-weight:normal; }
+h2.section { text-align:center; font-size:1.65rem; color:var(--gold); letter-spacing:3px;
+  text-transform:uppercase; margin:58px 0 26px; font-weight:bold; }
 .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:22px; }
 /* home page: all five armies on one row, folding down on narrow screens */
 .grid.five { grid-template-columns:repeat(5,1fr); gap:16px; }
